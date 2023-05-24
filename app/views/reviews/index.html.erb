@@ -1,0 +1,6 @@
+<h2>Reviews</h2>
+<ul>
+  <% @restaurant.reviews.each do |review| %>
+    <li><strong>Rating:</strong> <%= review.rating %>/5 - <strong>Review:</strong> <%= review.content %></li>
+  <% end %>
+</ul>
